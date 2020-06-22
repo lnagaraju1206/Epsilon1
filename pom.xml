@@ -4,7 +4,7 @@
   <groupId>com.thinknyx.training</groupId>
   <artifactId>epsilon</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>epsilon Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,7 +15,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
+  
+<distributionManagement>
+ <repository>
+          <id>github</id>
+          <name>GitHub OWNER Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/lnagaraju1206/Epsilon1</url>
+    </repository>
+</distributionManagement>
+<build>
     <finalName>epsilon</finalName>
   </build>
 </project>
